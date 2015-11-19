@@ -1,0 +1,224 @@
+(dp0
+S'SEQUEST LightDiMethyl HeavyDiMethyl'
+p1
+(dp2
+S'Mods'
+p3
+(dp4
+S'oxidation'
+p5
+S'*'
+p6
+sS'heavy dimethylation'
+p7
+S']'
+p8
+sS'light dimethylation'
+p9
+S'N-Term'
+p10
+sS'guanidination'
+p11
+S'#'
+p12
+ssS'AAs'
+p13
+(dp14
+S'X'
+p15
+S'I'
+p16
+sssS'SEQUEST None LightProp'
+p17
+(dp18
+g3
+(dp19
+g5
+g6
+sS'light propionylation'
+p20
+S']'
+p21
+sg11
+g12
+ssg13
+(dp22
+g15
+g16
+sssS'SEQUEST'
+p23
+(dp24
+g3
+(dp25
+sg13
+(dp26
+g15
+g16
+sssS'SEQUEST None LightDiMethyl'
+p27
+(dp28
+g3
+(dp29
+S'light dimethylation'
+p30
+g8
+sg5
+g6
+sg11
+g12
+ssg13
+(dp31
+g15
+g16
+sssS'SEQUEST None HeavyProp'
+p32
+(dp33
+g3
+(dp34
+g5
+g6
+sS'heavy propionylation'
+p35
+g21
+sg11
+g12
+ssg13
+(dp36
+g15
+g16
+sssS'SEQUEST SILAC'
+p37
+(dp38
+g3
+(dp39
+g5
+g6
+sS'silac(k)'
+p40
+g12
+ssg13
+(dp41
+g15
+g16
+sssS'SEQUEST None HeavyDiMethyl'
+p42
+(dp43
+g3
+(dp44
+g5
+g6
+sg7
+g8
+sg11
+g12
+ssg13
+(dp45
+g15
+g16
+sssS'SEQUEST LightProp HeavyProp'
+p46
+(dp47
+g3
+(dp48
+g5
+g6
+sS'light propionylation'
+p49
+S'N-Term'
+p50
+sS'heavy propionylation'
+p51
+g21
+sg11
+g12
+ssg13
+(dp52
+g15
+g16
+sssS'MASCOT LightDiMethyl HeavyDiMethyl'
+p53
+(dp54
+g3
+(dp55
+g5
+g6
+sg7
+g8
+sg9
+g10
+sg11
+g12
+ssg13
+(dp56
+ssS'MASCOT Basic'
+p57
+(dp58
+g3
+(dp59
+g5
+S'*'
+p60
+ssg13
+(dp61
+ssS'LADS StaticLightDiMethyl StaticGuan'
+p62
+(dp63
+S'Mods'
+p64
+(dp65
+S'light dimethylation'
+p66
+S'N-Term'
+p67
+sS'guanidination'
+p68
+S'static'
+p69
+ssS'AAs'
+p70
+(dp71
+S'-'
+p72
+S'X'
+p73
+sssS'MASCOT SILAC'
+p74
+(dp75
+g3
+(dp76
+g5
+g12
+sS'silac(k)'
+p77
+g6
+ssg13
+(dp78
+ssS'PepNovo SILAC'
+p79
+(dp80
+g3
+(dp81
+g5
+g12
+sg77
+g6
+ssg13
+(dp82
+ssS'SEQUEST LightDiMethyl HeavyDiMethyl StaticGuan'
+p83
+(dp84
+g3
+(dp85
+g5
+g6
+sg7
+g8
+sg9
+g10
+sg11
+g69
+ssg13
+(dp86
+g15
+g16
+sss.
