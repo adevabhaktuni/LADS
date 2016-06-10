@@ -1,0 +1,110 @@
+## README.TXT
+
+Deisotoper + LADS
+
+Developed by Arun Devabhaktuni and the Elias Lab at Stanford University.
+
+SUPPORTED OS:
+- Any linux platform with BASH and Python installed. 
+
+REQUIREMENTS:
+- Python 2.6 or greater
+- Python-dev(el) installed
+- Sudo privileges may be necessary
+
+PACKAGE INCLUDES:
+- Bash script to install necessary third party libraries for LADS
+- Bash script to run both deisotoper and LADS together
+- Deisotoper with mzxml functionality
+- LADS
+- Libsvm source code
+- Python NUMPY source code
+- Python NetworkX source code
+- Test data set with DTAs and test mzXML (only contains ms2 peaks)
+
+TO CONFIGURE:
+To configure, enter the collowing command:
+
+sh config.sh 
+
+with root access. This will unpack necessary files. If you do not have python
+installed, it will error out and tell you that it is needed to use our 
+software.  
+
+TO RUN:
+To run, enter the following command:
+
+sh wrap.sh -d INPUT -o OUTPUT -l MS_LEVEL (optional) -r RESTRICTIONS (optional)
+
+where -d is the input mzXML file, -o is the desired return directory for LADS
+and LADS scoring, -l related so the MS level that deisotoper will search for,
+and -r is the single piece that you wish to run (optional). Input must be entered
+with full path. By default, if no output directory is given, this script will 
+default to storing all DTAs and LADS output files to the input directory. 
+If the MS level is not specified, then it will default to MS2. 
+Writing to this directory will require write permissions, and in case you
+encounter a warning saying that no such directory existed, please run under
+eleveated access. 
+
+Possible MS levels:
+	1 = MS1
+	2 = MS2
+	3 = MS1 + MS2
+	4 = MS3
+	5 = MS1 + MS3
+	6 = MS2 + MS3
+	7 = MS1 + MS2 + MS3
+
+	Possible restrictions with -r:
+	deisotope = Only run deisotoper
+	lads = Only run LADS search
+	score = Only run LADS scoring function
+
+FOR HELP:
+Enter:
+
+sh wrap.sh -h
+
+TO MODIFY RUNS:
+Change the wrap.sh file to modify the parameters that you wish to use on either
+deisotoper or LADS. To view the help menus, type "sh wrap.sh HELP". Modifying 
+parameters will need to be done within the wrap.sh script for each individual
+program. 
+
+NOTE:
+Current scripts are set up with relative paths which are based on the current
+extracted organization. Moving files to different directories will cause 
+scripts to break. 
+
+Sample data has been packaged with the executables to help in verification that
+all programs function properly. For the deisotoper, there is a test mzXML file that
+unpacks to ~13,000 dta files. For LADS, a test set of dtas at ~620. For LADS
+scoring, a test run through the test dtas provided. 
+
+TO RUN DEISOTOPER INDEPENDENTLY:
+Run the following command within the deisotoper directory:
+
+php deisotoper_mzxml_conversion.php -n -f $INPUT -o $TMP -l $LEVEL
+
+where -f represents the input mzXML file, -o represents the output directory where
+the returned dta files will be returned, and -l represents the desired scan
+levels that will be extracted.
+
+TO RUN LADS INDEPENDENTLY:	
+Run the following command:
+
+sh wrap.sh -d INPUT -o OUTPUT -l MS_LEVEL (optional) -r RESTRICTIONS (optional)
+
+where -d is the input directory for all DTA files to be used in the search,
+-o is the output directory where output.txt will be stored, and -r is is "lads".
+NOTE: only the input, output, and output for tee should be changed as all other
+parameters are used for various portions of LADS. Removal of these arguments
+will cause the program to crash.
+
+TO RUN LADS SCORING INDIVIDUALLY:
+Run the following command:
+
+sh wrap.sh -d INPUT -o OUTPUT -l MS_LEVEL (optional) -r RESTRICTIONS (optional)
+
+where -d is the directory in which the LADS search output is, -o is the desired
+directory for scoring output, and -r is "score". 

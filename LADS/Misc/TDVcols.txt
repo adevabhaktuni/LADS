@@ -1,0 +1,42 @@
+(lp0
+S'light scan'
+p1
+aS'heavy scan'
+p2
+aS'pair configuration'
+p3
+aS'shared peaks ratio'
+p4
+aS'epsilon'
+p5
+aS'M+H'
+p6
+aS'score'
+p7
+aS'seq'
+p8
+aS'alpha'
+p9
+aS'max score from ori'
+p10
+aS'max score from dest'
+p11
+aS'AA edges'
+p12
+aS'start nodes'
+p13
+aS'start edges'
+p14
+aS'end nodes'
+p15
+aS'end edges'
+p16
+aS'num paths'
+p17
+aS'ambiguous edges'
+p18
+aS'num ambig edges'
+p19
+aS'sequencing time'
+p20
+a.
