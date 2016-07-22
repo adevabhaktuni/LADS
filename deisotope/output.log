@@ -1,0 +1,5 @@
+['/lab/samba/shared/dropbox/sharedData/Arun_Keith/deisotope_LADS/LADS/Scripts', '/lab/samba/shared/dropbox/sharedData/Arun_Keith/deisotope_LADS/LADS', '/lab/samba/shared/dropbox/sharedData/Arun_Keith/deisotope_LADS/LADS', '/usr/lib64/python2.6/site-packages/MySQL_python-1.2.3-py2.6-linux-x86_64.egg', '/usr/lib/python2.6/site-packages/pip-1.0.1-py2.6.egg', '/usr/lib64/python26.zip', '/usr/lib64/python2.6', '/usr/lib64/python2.6/plat-linux2', '/usr/lib64/python2.6/lib-tk', '/usr/lib64/python2.6/lib-old', '/usr/lib64/python2.6/lib-dynload', '/usr/lib64/python2.6/site-packages', '/usr/lib/python2.6/site-packages', '/usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info', '/lab/samba/shared/dropbox/sharedData/Arun_Keith/deisotope_LADS/LADS/libsvm-3.12/python', '/lab/samba/shared/dropbox/sharedData/Arun_Keith/deisotope_LADS/LADS/libsvm-3.12/python']
+light dimethylation ['N-Term', '28.0313', '0', ']']
+oxidation ['M', '15.994915', '0', '#']
+['Met', 'C5H9ONS', 147.035405, 131.1926]
+heavy dimethylation ['N-Term', '34.068961', '0', '}']
